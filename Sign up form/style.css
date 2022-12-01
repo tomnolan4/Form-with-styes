@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+   --red: hsl(0, 100%, 74%); 
+   --green: hsl(154, 59%, 51%);
+   --blue: hsl(248, 32%, 49%);
+   --dark-blue: hsl(249, 10%, 26%);
+   --grayish-blue: hsl(246, 25%, 77%);
+}
+
+
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: var(--red);
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*this puts things into center */
+    font-size: 16px;
+    
+
+}
+
+.container-content{
+    background-image: url("bg-intro-desktop.png");
+ 
+  
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.container-content{
+    margin: 1rem;
+    color:white;
+}
+
+
+
+/* grid */
+
+
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+ 
+    .grid--1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+.container{ 
+    max-width: 1140px;
+
+}
+
+
+
+
+
+
+
+/* inputs */
+.main-btn{
+ width: 93.5%;
+ border: none;
+ border-radius: 12px;
+ background:hsl(154, 59%, 51%);
+ padding: .5rem;
+ color: white;
+text-transform: uppercase;
+letter-spacing: 1px;
+
+ 
+}
+
+.password{
+    width: 100%;
+}
+
+.email{
+    width: 100%;
+}
+
+.age{
+    width: 100%;
+}
+
+.name{
+    width: 100%;
+}
+
+
+
+/*go back over border box */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+
+/* errors */
+
+
+
+  /* .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  } */
+  /* .input-area .icon{
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  } */
+  /* .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  } */
+  /* form input:focus ~ .icon,
+  form .field.valid .icon{
+    color: #5372F0;
+  } */
+  /* form .field.shake input:focus ~ .icon,
+  form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  } */
+  form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+  }
+  /* form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  } */
+  
+
+  /* styles related to the JS funcitons */
+  
+  form .field .error{
+    display: none;
+  }
+  
+  
+  form .field.error .error{
+    display: block;
+  }
+  
+
+  
+  .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  .error{
+    display: block;
+    border-color: #dc3545;
+  }
+  
+
+  /* form  */
+
+  .field{
+    padding: 1rem;
+    /* width: 400px; */
+  }
+
+/* .test {
+    /* margin: 1rem;  */
+    /* this gives space even on mobile */
+ 
+
+.form-wrapper{
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem;
+  
+
+    
+}
+
+
+.form-group{
+display: flex;
+flex-direction: column;
+margin-top: 1rem;
+
+}
+
+.top-btn{
+  border: none;
+  background:  hsl(248, 32%, 49%);
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 92%;
+  font-size: 14px;
+  box-shadow: 1px 1px black;
+  
+}
+
+
+
+.form-section{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+}
+
